@@ -12,4 +12,6 @@
 
 @property (nonatomic, strong) StationsTableViewModel *viewModel;
 
+- (instancetype)initWithViewModel:(StationsTableViewModel *)viewModel;
+
 @end

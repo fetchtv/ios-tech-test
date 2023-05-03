@@ -14,10 +14,19 @@
 
 @implementation StationsTableViewController
 
+- (instancetype)initWithViewModel:(StationsTableViewModel *)viewModel {
+    self = [super initWithStyle:UITableViewStylePlain];
+    if (self) {
+        _viewModel = viewModel;
+    }
+    return self;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
 
     self.title = @"Fetch Stations";
+    self.view.backgroundColor = [UIColor redColor];
 
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"Cell"];
 }

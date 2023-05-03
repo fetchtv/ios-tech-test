@@ -18,6 +18,8 @@
 		48727DF62A01F1210060C52D /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48727DF52A01F1210060C52D /* NetworkService.swift */; };
 		48727DFA2A01FA150060C52D /* Station.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48727DF92A01FA150060C52D /* Station.swift */; };
 		48727DFC2A01FA270060C52D /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48727DFB2A01FA270060C52D /* Board.swift */; };
+		48727DFE2A01FE2D0060C52D /* StationsTableVCWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48727DFD2A01FE2D0060C52D /* StationsTableVCWrapper.swift */; };
+		48924CCB2A020A47006DFD17 /* FetchStations-Bridging-Header.h in Sources */ = {isa = PBXBuildFile; fileRef = 48727DFF2A0202570060C52D /* FetchStations-Bridging-Header.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +35,8 @@
 		48727DF52A01F1210060C52D /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		48727DF92A01FA150060C52D /* Station.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Station.swift; sourceTree = "<group>"; };
 		48727DFB2A01FA270060C52D /* Board.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Board.swift; sourceTree = "<group>"; };
+		48727DFD2A01FE2D0060C52D /* StationsTableVCWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationsTableVCWrapper.swift; sourceTree = "<group>"; };
+		48727DFF2A0202570060C52D /* FetchStations-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FetchStations-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,13 +69,14 @@
 		48727DD02A01EC150060C52D /* FetchStations */ = {
 			isa = PBXGroup;
 			children = (
+				48727DFF2A0202570060C52D /* FetchStations-Bridging-Header.h */,
+				48727DF52A01F1210060C52D /* NetworkService.swift */,
 				48727DE32A01ECC80060C52D /* Models */,
 				48727DDF2A01EC240060C52D /* Stations */,
 				48727DD12A01EC150060C52D /* FetchStationsApp.swift */,
 				48727DD32A01EC150060C52D /* ContentView.swift */,
 				48727DD52A01EC160060C52D /* Assets.xcassets */,
 				48727DD72A01EC160060C52D /* Preview Content */,
-				48727DF52A01F1210060C52D /* NetworkService.swift */,
 			);
 			path = FetchStations;
 			sourceTree = "<group>";
@@ -91,6 +96,7 @@
 				48727DE12A01EC820060C52D /* StationsTableViewController.m */,
 				48727DF12A01EF850060C52D /* StationsTableViewModel.h */,
 				48727DEF2A01EF730060C52D /* StationsTableViewModel.m */,
+				48727DFD2A01FE2D0060C52D /* StationsTableVCWrapper.swift */,
 			);
 			path = Stations;
 			sourceTree = "<group>";
@@ -175,10 +181,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48924CCB2A020A47006DFD17 /* FetchStations-Bridging-Header.h in Sources */,
 				48727DF32A01F03B0060C52D /* StationsTableViewController.h in Sources */,
 				48727DF42A01F03B0060C52D /* StationsTableViewModel.h in Sources */,
 				48727DFA2A01FA150060C52D /* Station.swift in Sources */,
 				48727DF22A01EFF50060C52D /* StationsTableViewModel.m in Sources */,
+				48727DFE2A01FE2D0060C52D /* StationsTableVCWrapper.swift in Sources */,
 				48727DD42A01EC150060C52D /* ContentView.swift in Sources */,
 				48727DE22A01EC820060C52D /* StationsTableViewController.m in Sources */,
 				48727DD22A01EC150060C52D /* FetchStationsApp.swift in Sources */,
@@ -328,7 +336,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.tests.FetchStations;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "FetchStations/FetchStations-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -359,7 +367,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.tests.FetchStations;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "FetchStations/FetchStations-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
