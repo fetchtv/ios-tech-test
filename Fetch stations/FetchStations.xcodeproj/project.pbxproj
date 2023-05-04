@@ -1,0 +1,470 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		480D78D32A022CB2003EEC38 /* StationResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 480D78D22A022CB2003EEC38 /* StationResponse.m */; };
+		480D78D62A022E60003EEC38 /* Station.m in Sources */ = {isa = PBXBuildFile; fileRef = 480D78D52A022E60003EEC38 /* Station.m */; };
+		480D78DB2A022EC1003EEC38 /* Place.m in Sources */ = {isa = PBXBuildFile; fileRef = 480D78DA2A022EC1003EEC38 /* Place.m */; };
+		480D78DF2A022F6B003EEC38 /* StationResponse.h in Sources */ = {isa = PBXBuildFile; fileRef = 480D78D12A022CA1003EEC38 /* StationResponse.h */; };
+		480D78E02A022F75003EEC38 /* Station.h in Sources */ = {isa = PBXBuildFile; fileRef = 480D78D42A022DE5003EEC38 /* Station.h */; };
+		480D78E12A022F7D003EEC38 /* Place.h in Sources */ = {isa = PBXBuildFile; fileRef = 480D78D72A022E95003EEC38 /* Place.h */; };
+		48727DD22A01EC150060C52D /* FetchStationsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48727DD12A01EC150060C52D /* FetchStationsApp.swift */; };
+		48727DD42A01EC150060C52D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48727DD32A01EC150060C52D /* ContentView.swift */; };
+		48727DD62A01EC160060C52D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48727DD52A01EC160060C52D /* Assets.xcassets */; };
+		48727DD92A01EC160060C52D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48727DD82A01EC160060C52D /* Preview Assets.xcassets */; };
+		48727DE22A01EC820060C52D /* StationsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48727DE12A01EC820060C52D /* StationsTableViewController.m */; };
+		48727DF22A01EFF50060C52D /* StationsTableViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 48727DEF2A01EF730060C52D /* StationsTableViewModel.m */; };
+		48727DF32A01F03B0060C52D /* StationsTableViewController.h in Sources */ = {isa = PBXBuildFile; fileRef = 48727DE02A01EC710060C52D /* StationsTableViewController.h */; };
+		48727DF42A01F03B0060C52D /* StationsTableViewModel.h in Sources */ = {isa = PBXBuildFile; fileRef = 48727DF12A01EF850060C52D /* StationsTableViewModel.h */; };
+		48727DF62A01F1210060C52D /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48727DF52A01F1210060C52D /* NetworkService.swift */; };
+		48727DFA2A01FA150060C52D /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48727DF92A01FA150060C52D /* Place.swift */; };
+		48727DFC2A01FA270060C52D /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48727DFB2A01FA270060C52D /* Board.swift */; };
+		48727DFE2A01FE2D0060C52D /* StationsTableVCWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48727DFD2A01FE2D0060C52D /* StationsTableVCWrapper.swift */; };
+		48924CCB2A020A47006DFD17 /* FetchStations-Bridging-Header.h in Sources */ = {isa = PBXBuildFile; fileRef = 48727DFF2A0202570060C52D /* FetchStations-Bridging-Header.h */; };
+		48E538ED2A0222F600CAE2E5 /* NetworkServiceObjc.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E538EC2A0222F600CAE2E5 /* NetworkServiceObjc.m */; };
+		48F3DA902A031E8A003A81FF /* LocationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F3DA8F2A031E8A003A81FF /* LocationViewModel.swift */; };
+		48F3DA9F2A035839003A81FF /* StationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48F3DA9D2A035839003A81FF /* StationTableViewCell.xib */; };
+		48F3DAA22A035D6E003A81FF /* StationTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 48F3DAA12A035D6E003A81FF /* StationTableViewCell.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		480D78D12A022CA1003EEC38 /* StationResponse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StationResponse.h; sourceTree = "<group>"; };
+		480D78D22A022CB2003EEC38 /* StationResponse.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StationResponse.m; sourceTree = "<group>"; };
+		480D78D42A022DE5003EEC38 /* Station.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Station.h; sourceTree = "<group>"; };
+		480D78D52A022E60003EEC38 /* Station.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Station.m; sourceTree = "<group>"; };
+		480D78D72A022E95003EEC38 /* Place.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Place.h; sourceTree = "<group>"; };
+		480D78DA2A022EC1003EEC38 /* Place.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Place.m; sourceTree = "<group>"; };
+		48727DCE2A01EC150060C52D /* FetchStations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FetchStations.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		48727DD12A01EC150060C52D /* FetchStationsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchStationsApp.swift; sourceTree = "<group>"; };
+		48727DD32A01EC150060C52D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		48727DD52A01EC160060C52D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		48727DD82A01EC160060C52D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		48727DE02A01EC710060C52D /* StationsTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StationsTableViewController.h; sourceTree = "<group>"; };
+		48727DE12A01EC820060C52D /* StationsTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StationsTableViewController.m; sourceTree = "<group>"; };
+		48727DEF2A01EF730060C52D /* StationsTableViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StationsTableViewModel.m; sourceTree = "<group>"; };
+		48727DF12A01EF850060C52D /* StationsTableViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StationsTableViewModel.h; sourceTree = "<group>"; };
+		48727DF52A01F1210060C52D /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		48727DF92A01FA150060C52D /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
+		48727DFB2A01FA270060C52D /* Board.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Board.swift; sourceTree = "<group>"; };
+		48727DFD2A01FE2D0060C52D /* StationsTableVCWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationsTableVCWrapper.swift; sourceTree = "<group>"; };
+		48727DFF2A0202570060C52D /* FetchStations-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FetchStations-Bridging-Header.h"; sourceTree = "<group>"; };
+		48E538EB2A0222E600CAE2E5 /* NetworkServiceObjc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetworkServiceObjc.h; sourceTree = "<group>"; };
+		48E538EC2A0222F600CAE2E5 /* NetworkServiceObjc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetworkServiceObjc.m; sourceTree = "<group>"; };
+		48F3DA8E2A031A98003A81FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		48F3DA8F2A031E8A003A81FF /* LocationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewModel.swift; sourceTree = "<group>"; };
+		48F3DA9D2A035839003A81FF /* StationTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StationTableViewCell.xib; sourceTree = "<group>"; };
+		48F3DAA02A035D49003A81FF /* StationTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StationTableViewCell.h; sourceTree = "<group>"; };
+		48F3DAA12A035D6E003A81FF /* StationTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StationTableViewCell.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		48727DCB2A01EC150060C52D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		48727DC52A01EC150060C52D = {
+			isa = PBXGroup;
+			children = (
+				48727DD02A01EC150060C52D /* FetchStations */,
+				48727DCF2A01EC150060C52D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		48727DCF2A01EC150060C52D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				48727DCE2A01EC150060C52D /* FetchStations.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		48727DD02A01EC150060C52D /* FetchStations */ = {
+			isa = PBXGroup;
+			children = (
+				48F3DA8E2A031A98003A81FF /* Info.plist */,
+				48727DFF2A0202570060C52D /* FetchStations-Bridging-Header.h */,
+				48E538EA2A0222D400CAE2E5 /* Networking */,
+				48727DE32A01ECC80060C52D /* Models */,
+				48727DDF2A01EC240060C52D /* Local Stations */,
+				48F3DA912A034565003A81FF /* Departures */,
+				48727DD12A01EC150060C52D /* FetchStationsApp.swift */,
+				48727DD32A01EC150060C52D /* ContentView.swift */,
+				48727DD52A01EC160060C52D /* Assets.xcassets */,
+				48727DD72A01EC160060C52D /* Preview Content */,
+			);
+			path = FetchStations;
+			sourceTree = "<group>";
+		};
+		48727DD72A01EC160060C52D /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				48727DD82A01EC160060C52D /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		48727DDF2A01EC240060C52D /* Local Stations */ = {
+			isa = PBXGroup;
+			children = (
+				48727DE02A01EC710060C52D /* StationsTableViewController.h */,
+				48727DE12A01EC820060C52D /* StationsTableViewController.m */,
+				48727DF12A01EF850060C52D /* StationsTableViewModel.h */,
+				48727DEF2A01EF730060C52D /* StationsTableViewModel.m */,
+				48727DFD2A01FE2D0060C52D /* StationsTableVCWrapper.swift */,
+				48F3DA8F2A031E8A003A81FF /* LocationViewModel.swift */,
+				48F3DA9D2A035839003A81FF /* StationTableViewCell.xib */,
+				48F3DAA02A035D49003A81FF /* StationTableViewCell.h */,
+				48F3DAA12A035D6E003A81FF /* StationTableViewCell.m */,
+			);
+			path = "Local Stations";
+			sourceTree = "<group>";
+		};
+		48727DE32A01ECC80060C52D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				48727DF92A01FA150060C52D /* Place.swift */,
+				48727DFB2A01FA270060C52D /* Board.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		48E538EA2A0222D400CAE2E5 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				48E538EB2A0222E600CAE2E5 /* NetworkServiceObjc.h */,
+				48E538EC2A0222F600CAE2E5 /* NetworkServiceObjc.m */,
+				48727DF52A01F1210060C52D /* NetworkService.swift */,
+				480D78D12A022CA1003EEC38 /* StationResponse.h */,
+				480D78D22A022CB2003EEC38 /* StationResponse.m */,
+				480D78D42A022DE5003EEC38 /* Station.h */,
+				480D78D52A022E60003EEC38 /* Station.m */,
+				480D78D72A022E95003EEC38 /* Place.h */,
+				480D78DA2A022EC1003EEC38 /* Place.m */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		48F3DA912A034565003A81FF /* Departures */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Departures;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		48727DCD2A01EC150060C52D /* FetchStations */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 48727DDC2A01EC160060C52D /* Build configuration list for PBXNativeTarget "FetchStations" */;
+			buildPhases = (
+				48727DCA2A01EC150060C52D /* Sources */,
+				48727DCB2A01EC150060C52D /* Frameworks */,
+				48727DCC2A01EC150060C52D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FetchStations;
+			productName = FetchStations;
+			productReference = 48727DCE2A01EC150060C52D /* FetchStations.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		48727DC62A01EC150060C52D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					48727DCD2A01EC150060C52D = {
+						CreatedOnToolsVersion = 14.2;
+						LastSwiftMigration = 1420;
+					};
+				};
+			};
+			buildConfigurationList = 48727DC92A01EC150060C52D /* Build configuration list for PBXProject "FetchStations" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 48727DC52A01EC150060C52D;
+			productRefGroup = 48727DCF2A01EC150060C52D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				48727DCD2A01EC150060C52D /* FetchStations */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		48727DCC2A01EC150060C52D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48727DD92A01EC160060C52D /* Preview Assets.xcassets in Resources */,
+				48F3DA9F2A035839003A81FF /* StationTableViewCell.xib in Resources */,
+				48727DD62A01EC160060C52D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		48727DCA2A01EC150060C52D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				480D78E12A022F7D003EEC38 /* Place.h in Sources */,
+				480D78E02A022F75003EEC38 /* Station.h in Sources */,
+				480D78DF2A022F6B003EEC38 /* StationResponse.h in Sources */,
+				480D78DB2A022EC1003EEC38 /* Place.m in Sources */,
+				48924CCB2A020A47006DFD17 /* FetchStations-Bridging-Header.h in Sources */,
+				48727DF32A01F03B0060C52D /* StationsTableViewController.h in Sources */,
+				48727DF42A01F03B0060C52D /* StationsTableViewModel.h in Sources */,
+				48727DFA2A01FA150060C52D /* Place.swift in Sources */,
+				48727DF22A01EFF50060C52D /* StationsTableViewModel.m in Sources */,
+				48727DFE2A01FE2D0060C52D /* StationsTableVCWrapper.swift in Sources */,
+				48727DD42A01EC150060C52D /* ContentView.swift in Sources */,
+				48727DE22A01EC820060C52D /* StationsTableViewController.m in Sources */,
+				480D78D32A022CB2003EEC38 /* StationResponse.m in Sources */,
+				48E538ED2A0222F600CAE2E5 /* NetworkServiceObjc.m in Sources */,
+				48F3DAA22A035D6E003A81FF /* StationTableViewCell.m in Sources */,
+				48727DD22A01EC150060C52D /* FetchStationsApp.swift in Sources */,
+				48727DF62A01F1210060C52D /* NetworkService.swift in Sources */,
+				480D78D62A022E60003EEC38 /* Station.m in Sources */,
+				48F3DA902A031E8A003A81FF /* LocationViewModel.swift in Sources */,
+				48727DFC2A01FA270060C52D /* Board.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		48727DDA2A01EC160060C52D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "";
+				INFOPLIST_KEY_NSLocationTemporaryUsageDescriptionDictionary = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		48727DDB2A01EC160060C52D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "";
+				INFOPLIST_KEY_NSLocationTemporaryUsageDescriptionDictionary = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		48727DDD2A01EC160060C52D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FetchStations/Preview Content\"";
+				DEVELOPMENT_TEAM = PMDTSY5PZ6;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FetchStations/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app needs to access your location to find local stations";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tests.FetchStations;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "FetchStations/FetchStations-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		48727DDE2A01EC160060C52D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FetchStations/Preview Content\"";
+				DEVELOPMENT_TEAM = PMDTSY5PZ6;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FetchStations/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app needs to access your location to find local stations";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tests.FetchStations;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "FetchStations/FetchStations-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		48727DC92A01EC150060C52D /* Build configuration list for PBXProject "FetchStations" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				48727DDA2A01EC160060C52D /* Debug */,
+				48727DDB2A01EC160060C52D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		48727DDC2A01EC160060C52D /* Build configuration list for PBXNativeTarget "FetchStations" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				48727DDD2A01EC160060C52D /* Debug */,
+				48727DDE2A01EC160060C52D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 48727DC62A01EC150060C52D /* Project object */;
+}
