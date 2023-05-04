@@ -6,6 +6,7 @@
 //
 
 #import "StationsTableViewController.h"
+#import "StationTableViewCell.h"
 
 @interface StationsTableViewController () <StationsTableViewModelDelegate>
 
@@ -28,7 +29,9 @@
     self.title = @"Fetch Stations";
     self.view.backgroundColor = [UIColor redColor];
 
-    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"Cell"];
+    [self.tableView registerClass:[StationTableViewCell class] forCellReuseIdentifier:@"StationTableViewCell"];
+    self.tableView.dataSource = self;
+    self.tableView.delegate = self;
 }
 
 #pragma mark - Table view data source
@@ -42,9 +45,13 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
+    NSLog(@"cellForRowAtIndexPath");
+    StationTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"StationTableViewCell" forIndexPath:indexPath];
 
-    cell.textLabel.text = [NSString stringWithFormat:@"Row %ld", (long)indexPath.row];
+    Station *station = self.viewModel.stations[indexPath.row];
+
+    [cell configureWithStation:station];
+
     return cell;
 }
 
@@ -52,7 +59,6 @@
 
 - (void)stationsDidLoad {
     dispatch_async(dispatch_get_main_queue(), ^{
-        NSLog(@"stationsDidLoad");
         [self.tableView reloadData];
     });
 }

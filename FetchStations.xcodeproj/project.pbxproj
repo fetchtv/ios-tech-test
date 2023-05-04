@@ -22,12 +22,14 @@
 		48727DF32A01F03B0060C52D /* StationsTableViewController.h in Sources */ = {isa = PBXBuildFile; fileRef = 48727DE02A01EC710060C52D /* StationsTableViewController.h */; };
 		48727DF42A01F03B0060C52D /* StationsTableViewModel.h in Sources */ = {isa = PBXBuildFile; fileRef = 48727DF12A01EF850060C52D /* StationsTableViewModel.h */; };
 		48727DF62A01F1210060C52D /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48727DF52A01F1210060C52D /* NetworkService.swift */; };
-		48727DFA2A01FA150060C52D /* Station.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48727DF92A01FA150060C52D /* Station.swift */; };
+		48727DFA2A01FA150060C52D /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48727DF92A01FA150060C52D /* Place.swift */; };
 		48727DFC2A01FA270060C52D /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48727DFB2A01FA270060C52D /* Board.swift */; };
 		48727DFE2A01FE2D0060C52D /* StationsTableVCWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48727DFD2A01FE2D0060C52D /* StationsTableVCWrapper.swift */; };
 		48924CCB2A020A47006DFD17 /* FetchStations-Bridging-Header.h in Sources */ = {isa = PBXBuildFile; fileRef = 48727DFF2A0202570060C52D /* FetchStations-Bridging-Header.h */; };
 		48E538ED2A0222F600CAE2E5 /* NetworkServiceObjc.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E538EC2A0222F600CAE2E5 /* NetworkServiceObjc.m */; };
 		48F3DA902A031E8A003A81FF /* LocationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48F3DA8F2A031E8A003A81FF /* LocationViewModel.swift */; };
+		48F3DA9F2A035839003A81FF /* StationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48F3DA9D2A035839003A81FF /* StationTableViewCell.xib */; };
+		48F3DAA22A035D6E003A81FF /* StationTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 48F3DAA12A035D6E003A81FF /* StationTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,7 +49,7 @@
 		48727DEF2A01EF730060C52D /* StationsTableViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StationsTableViewModel.m; sourceTree = "<group>"; };
 		48727DF12A01EF850060C52D /* StationsTableViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StationsTableViewModel.h; sourceTree = "<group>"; };
 		48727DF52A01F1210060C52D /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
-		48727DF92A01FA150060C52D /* Station.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Station.swift; sourceTree = "<group>"; };
+		48727DF92A01FA150060C52D /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
 		48727DFB2A01FA270060C52D /* Board.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Board.swift; sourceTree = "<group>"; };
 		48727DFD2A01FE2D0060C52D /* StationsTableVCWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationsTableVCWrapper.swift; sourceTree = "<group>"; };
 		48727DFF2A0202570060C52D /* FetchStations-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FetchStations-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -55,6 +57,9 @@
 		48E538EC2A0222F600CAE2E5 /* NetworkServiceObjc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetworkServiceObjc.m; sourceTree = "<group>"; };
 		48F3DA8E2A031A98003A81FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		48F3DA8F2A031E8A003A81FF /* LocationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewModel.swift; sourceTree = "<group>"; };
+		48F3DA9D2A035839003A81FF /* StationTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StationTableViewCell.xib; sourceTree = "<group>"; };
+		48F3DAA02A035D49003A81FF /* StationTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StationTableViewCell.h; sourceTree = "<group>"; };
+		48F3DAA12A035D6E003A81FF /* StationTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StationTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,7 +96,8 @@
 				48727DFF2A0202570060C52D /* FetchStations-Bridging-Header.h */,
 				48E538EA2A0222D400CAE2E5 /* Networking */,
 				48727DE32A01ECC80060C52D /* Models */,
-				48727DDF2A01EC240060C52D /* Stations */,
+				48727DDF2A01EC240060C52D /* Local Stations */,
+				48F3DA912A034565003A81FF /* Departures */,
 				48727DD12A01EC150060C52D /* FetchStationsApp.swift */,
 				48727DD32A01EC150060C52D /* ContentView.swift */,
 				48727DD52A01EC160060C52D /* Assets.xcassets */,
@@ -108,7 +114,7 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		48727DDF2A01EC240060C52D /* Stations */ = {
+		48727DDF2A01EC240060C52D /* Local Stations */ = {
 			isa = PBXGroup;
 			children = (
 				48727DE02A01EC710060C52D /* StationsTableViewController.h */,
@@ -117,14 +123,17 @@
 				48727DEF2A01EF730060C52D /* StationsTableViewModel.m */,
 				48727DFD2A01FE2D0060C52D /* StationsTableVCWrapper.swift */,
 				48F3DA8F2A031E8A003A81FF /* LocationViewModel.swift */,
+				48F3DA9D2A035839003A81FF /* StationTableViewCell.xib */,
+				48F3DAA02A035D49003A81FF /* StationTableViewCell.h */,
+				48F3DAA12A035D6E003A81FF /* StationTableViewCell.m */,
 			);
-			path = Stations;
+			path = "Local Stations";
 			sourceTree = "<group>";
 		};
 		48727DE32A01ECC80060C52D /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				48727DF92A01FA150060C52D /* Station.swift */,
+				48727DF92A01FA150060C52D /* Place.swift */,
 				48727DFB2A01FA270060C52D /* Board.swift */,
 			);
 			path = Models;
@@ -144,6 +153,13 @@
 				480D78DA2A022EC1003EEC38 /* Place.m */,
 			);
 			path = Networking;
+			sourceTree = "<group>";
+		};
+		48F3DA912A034565003A81FF /* Departures */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Departures;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -206,6 +222,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				48727DD92A01EC160060C52D /* Preview Assets.xcassets in Resources */,
+				48F3DA9F2A035839003A81FF /* StationTableViewCell.xib in Resources */,
 				48727DD62A01EC160060C52D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -224,13 +241,14 @@
 				48924CCB2A020A47006DFD17 /* FetchStations-Bridging-Header.h in Sources */,
 				48727DF32A01F03B0060C52D /* StationsTableViewController.h in Sources */,
 				48727DF42A01F03B0060C52D /* StationsTableViewModel.h in Sources */,
-				48727DFA2A01FA150060C52D /* Station.swift in Sources */,
+				48727DFA2A01FA150060C52D /* Place.swift in Sources */,
 				48727DF22A01EFF50060C52D /* StationsTableViewModel.m in Sources */,
 				48727DFE2A01FE2D0060C52D /* StationsTableVCWrapper.swift in Sources */,
 				48727DD42A01EC150060C52D /* ContentView.swift in Sources */,
 				48727DE22A01EC820060C52D /* StationsTableViewController.m in Sources */,
 				480D78D32A022CB2003EEC38 /* StationResponse.m in Sources */,
 				48E538ED2A0222F600CAE2E5 /* NetworkServiceObjc.m in Sources */,
+				48F3DAA22A035D6E003A81FF /* StationTableViewCell.m in Sources */,
 				48727DD22A01EC150060C52D /* FetchStationsApp.swift in Sources */,
 				48727DF62A01F1210060C52D /* NetworkService.swift in Sources */,
 				480D78D62A022E60003EEC38 /* Station.m in Sources */,

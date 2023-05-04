@@ -1,19 +1,11 @@
 //
-//  Station.swift
+//  Place.swift
 //  FetchStations
 //
 //  Created by Waylan Sands on 3/5/2023.
 //
 
 import Foundation
-
-struct StationResponse: Codable {
-    let stations: [Station]
-}
-
-struct Station: Codable {
-    let place: Place
-}
 
 struct Place: Codable {
     let location: Location

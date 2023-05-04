@@ -21,18 +21,24 @@
 - (void)fetchDataFromLocation:(CLLocation *)location {
     [self->_networkService getStationsFromLocation:location completion:^(NSArray<Station *> *stations, NSError *error) {
         if (error) {
-            [self.delegate stationsDidFailWithError:error];
+            dispatch_async(dispatch_get_main_queue(), ^{
+                [self.delegate stationsDidFailWithError:error];
+            });
         } else {
-            self.stations = stations;
-            [self.delegate stationsDidLoad];
+            dispatch_async(dispatch_get_main_queue(), ^{
+                self.stations = stations;
+                [self.delegate stationsDidLoad];
+            });
         }
     }];
 }
 
 - (NSInteger)numberOfRowsInSection:(NSInteger)section {
     if (self.stations) {
+        NSLog(@"added count %lu", (unsigned long)self.stations.count);
         return self.stations.count;
     } else {
+        NSLog(@"zero rows");
         return 0;
     }
 }
