@@ -7,6 +7,10 @@
 
 import Foundation
 
+struct DepartureResponse: Codable {
+    let boards: [Board]
+}
+
 struct Board: Codable {
     let place: Place
     let departures: [Departure]?
@@ -15,11 +19,12 @@ struct Board: Codable {
 struct Departure: Codable {
     let time: String
     let transport: Transport
-    let agency: Agency
 }
 
-struct Agency: Codable {
-    let id: String
+struct Transport: Codable {
+    let mode: String
     let name: String
-    let website: String
+    let color: String
+    let textColor: String
+    let headsign: String
 }

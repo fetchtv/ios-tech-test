@@ -9,6 +9,5 @@
 #define FetchStations_Bridging_Header_h
 
 #import "StationsTableViewController.h"
-#import "StationsTableViewModel.h"
 
 #endif /* FetchStations_Bridging_Header_h */

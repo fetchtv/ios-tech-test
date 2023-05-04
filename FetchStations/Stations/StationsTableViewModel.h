@@ -5,16 +5,27 @@
 //  Created by Waylan Sands on 3/5/2023.
 //
 
-#import <Foundation/Foundation.h>
-#import "FetchStations-Swift.h"
+#import <CoreLocation/CoreLocation.h>
+#import "NetworkServiceObjc.h"
+
+@protocol StationsTableViewModelDelegate <NSObject>
+
+- (void)stationsDidFailWithError:(NSError *)error;
+- (void)stationsDidLoad;
+
+@end
 
 @interface StationsTableViewModel : NSObject
 
-@property (nonatomic, strong) NetworkService *networkService;
+@property (nonatomic, weak) id<StationsTableViewModelDelegate> delegate;
+@property (nonatomic, strong) NetworkServiceObjc *networkService;
+@property (nonatomic, copy) NSArray<Station *>* stations;
 
-- (instancetype)initWithNetworkService:(NetworkService *)networkService;
+- (instancetype)initWithNetworkService:(NetworkServiceObjc *)networkService;
 
 - (NSInteger)numberOfRowsInSection:(NSInteger)section;
 - (NSInteger)numberOfSections;
+
+- (void)fetchDataFromLocation:(CLLocation *)location;
 
 @end

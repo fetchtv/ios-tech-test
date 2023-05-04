@@ -6,9 +6,8 @@
 //
 
 #import "StationsTableViewController.h"
-#import "StationsTableViewModel.h"
 
-@interface StationsTableViewController ()
+@interface StationsTableViewController () <StationsTableViewModelDelegate>
 
 @end
 
@@ -18,6 +17,7 @@
     self = [super initWithStyle:UITableViewStylePlain];
     if (self) {
         _viewModel = viewModel;
+        _viewModel.delegate = self;
     }
     return self;
 }
@@ -46,6 +46,19 @@
 
     cell.textLabel.text = [NSString stringWithFormat:@"Row %ld", (long)indexPath.row];
     return cell;
+}
+
+#pragma mark - ViewModel delegate methods
+
+- (void)stationsDidLoad {
+    dispatch_async(dispatch_get_main_queue(), ^{
+        NSLog(@"stationsDidLoad");
+        [self.tableView reloadData];
+    });
+}
+
+- (void)stationsDidFailWithError:(NSError *)error {
+    // handle the error as appropriate
 }
 
 @end

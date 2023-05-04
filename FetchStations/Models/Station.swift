@@ -7,10 +7,12 @@
 
 import Foundation
 
+struct StationResponse: Codable {
+    let stations: [Station]
+}
+
 struct Station: Codable {
     let place: Place
-    let transports: [Transport]?
-    let accessPoints: [AccessPoint]?
 }
 
 struct Place: Codable {
@@ -23,18 +25,4 @@ struct Place: Codable {
 struct Location: Codable {
     let lat: Double
     let lng: Double
-}
-
-struct Transport: Codable {
-    let textColor: String
-    let headsign: String
-    let color: String
-    let mode: String
-    let name: String
-}
-
-struct AccessPoint: Codable {
-    let location: Location
-    let name: String
-    let type: String
 }

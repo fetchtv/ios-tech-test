@@ -6,6 +6,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <CoreLocation/CoreLocation.h>
 #import "StationsTableViewModel.h"
 
 @interface StationsTableViewController : UITableViewController
@@ -15,3 +16,5 @@
 - (instancetype)initWithViewModel:(StationsTableViewModel *)viewModel;
 
 @end
+
+

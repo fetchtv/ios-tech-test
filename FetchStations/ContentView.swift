@@ -8,9 +8,14 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject var locationViewModel = LocationViewModel()
+
     var body: some View {
-        StationsViewControllerWrapper()
+        StationsViewControllerWrapper(locationViewModel: locationViewModel)
             .frame(maxWidth: .infinity, maxHeight: .infinity)
+            .onAppear(perform: {
+                locationViewModel.requestPermission()
+            })
     }
 }
 
